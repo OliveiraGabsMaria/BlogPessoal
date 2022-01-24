@@ -21,3 +21,9 @@ ul.social-network li{
 .fa-linkedin:hover{
     color: #eed179;
 }
+.imgbg{
+    background-image: url(https://i.imgur.com/BHRgp59.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+}

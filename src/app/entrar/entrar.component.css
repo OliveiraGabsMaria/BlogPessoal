@@ -1,0 +1,27 @@
+#img-bg{
+    background-image: url(https://i.imgur.com/IesUNri.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background-color: #000;
+}
+.cld{
+    color: #a9acad;
+}
+.cS{
+    color: #eed179;
+}
+.cS:hover{
+    color: #a9acad;
+}
+
+.cS2{
+    background-color: #eed179;
+
+}
+.cS2:hover{
+    color: #a9acad;
+}

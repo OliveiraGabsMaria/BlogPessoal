@@ -4,3 +4,9 @@
 .cS:hover{
     color: #eed179;
 }
+.imgbg{
+    background-image: url(https://i.imgur.com/b3kMmyU.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+}

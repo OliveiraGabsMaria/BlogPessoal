@@ -1,0 +1,28 @@
+
+#img-bg{
+    background-image: url(https://i.imgur.com/Y3kJ0t9.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg2 {
+    background: #000;
+}
+.cld{
+    color: #eed179;
+}
+.cS{
+    background-color: #a9acad;
+}
+.cS:hover{
+    color: #eed179;
+}
+
+.cS2{
+    background-color: #eed179;
+}
+.cS2:hover{
+    color: #a9acad;
+}
