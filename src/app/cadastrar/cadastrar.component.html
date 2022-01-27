@@ -11,32 +11,32 @@
 
                     <div class="form-group cld">
                         <label for="">Digite seu nome</label>
-                        <input name="nome" type="text" class="form-control" placeholder="Nome">
+                        <input [(ngModel)]="usuario.nome" name="nome" id="nome" type="text" class="form-control" placeholder="Nome">
                     </div>
                     
                     <div class="form-group cld">
                         <label for="">Usuario</label>
-                        <input name="usuario" type="text" class="form-control" placeholder="Email" >
+                        <input [(ngModel)]="usuario.usuario" name="usuario" id="usuario" type="text" class="form-control" placeholder="Email" >
                     </div>
 
                     <div class="form-group cld">
                         <label for="">Senha</label>
-                    <input name="senha" type="password" class="form-control" placeholder="Senha">
+                    <input (input)="confirmSenha($event)" name="senha" id="senha" type="password" class="form-control" placeholder="Senha">
                     </div>
 
                     <div class="form-group cld">
                         <label for="">Confirmar Senha</label>
-                        <input name="confirmarSenha" type="password" class="form-control" placeholder= "Confirmar Senha">
+                        <input [(ngModel)]="usuario.senha" name="confirmSenha" id="confirmSenha" type="password" class="form-control" placeholder= "Confirmar Senha">
                     </div>
 
                     <div class="form-group cld">
                         <label for="">Link da foto</label>
-                        <input name="foto" class="form-control" placeholder="URL Foto">
+                        <input [(ngModel)]="usuario.foto" name="foto" id="foto" class="form-control" placeholder="URL Foto">
                     </div>
 
                     <div class="form-group cld">
-                        <label for="">Selecione o tipo de usuario</label>
-                        <select name="tipo" id="" class="form-control">
+                        <label for="tipo">Selecione o tipo de usuario</label>
+                        <select name="tipo" id="tipo" class="form-control" (change)="tipoUsuario($event)" >
                             <option value="">Selecione o tipo de usuario</option>
                             <option value="admin">Administrador</option>
                             <option value="padrao">Padrão</option>
@@ -46,7 +46,7 @@
 
                     <div class="d-flex justify-content-around">
                         <button type="submit" class="btn cS" routerLink= '/entrar'>Cancelar</button>
-                        <button type="submit" class="btn btn-outline cS2">Cadastrar</button>
+                        <button type="submit" class="btn btn-outline cS2" (click)="cadastrar()">Cadastrar</button>
                     </div>
                     </form>
                 </div> 
