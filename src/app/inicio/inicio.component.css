@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+
+.bcD{
+    background-color: #0e100e;
+}
+.bcD2{
+    background-color: #000;
+}
+.fn{
+    color: #eed179;
+    font-family: Comforter;
+    font-size: 150px;
+}
+.fsP{
+    color: #a9acad;
+    font-family: Raleway,ital,wght1;
+}
+.bcor2{
+    background-color: #eed179;
+}
+.bcor2:hover{
+    background-color: #a9acad;
+}
+.bcor{
+    color: #a9acad;
+}
+.bcor:hover{
+    background-color: #eed179;
+}
+.ddd{
+    color: #c2ab64;
+}
+.ddd2{
+    color: #6d6f70;
+}
+.sera{
+    color: #eed179
+}
