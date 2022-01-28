@@ -19,7 +19,7 @@ export class AuthService {
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>('https://blogbibspessoal.herokuapp.com/usuario/cadastrar', usuario)
+    return this.http.post<Usuario>('https://blogbibspessoal.herokuapp.com/usuarios/cadastrar', usuario)
 }
   logado(){
     let ok: boolean = false;

@@ -38,6 +38,7 @@ export class CadastrarComponent implements OnInit {
       alert("As senhas não correspondem.")
     }
     else{
+      console.log(this.usuario) 
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
         this.router.navigate(['/entrar'])

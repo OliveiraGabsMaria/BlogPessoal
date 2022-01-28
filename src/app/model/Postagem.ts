@@ -10,6 +10,7 @@ export class Postagem{
     public quote: string;
     public precopago: number;
     public data: Date;
-    public usuario: Usuario;
     public tema: Tema;
+    public usuario: Usuario;
+
 }
