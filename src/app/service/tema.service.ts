@@ -15,16 +15,17 @@ export class TemaService {
   token = {
       headers: new HttpHeaders().set('Authorization', environment.token)
     }
+
   
   getAllTemas(): Observable<Tema[]>{
     return this.http.get<Tema[]>('https://blogbibspessoal.herokuapp.com/temas', this.token)
   }
   
-  getByIdTema(id: number):Observable<Tema>{
+  getByIdTema(id:number):Observable<Tema>{
   return this.http.get<Tema>(`https://blogbibspessoal.herokuapp.com/temas/${id}`, this.token)
   }
   
-  postTema(tema: Tema): Observable<Tema>{
+  postTema(tema:Tema): Observable<Tema>{
       return this.http.post<Tema>('https://blogbibspessoal.herokuapp.com/temas', tema, this.token)
     }
   
@@ -32,7 +33,7 @@ export class TemaService {
       return this.http.put<Tema>('https://blogbibspessoal.herokuapp.com/temas', tema, this.token)
     }
   
-    deleteTema(id: number) {
+    deleteTema(id:number) {
       return this.http.delete(`https://blogbibspessoal.herokuapp.com/temas/${id}`, this.token)
     }
   }

@@ -20,6 +20,8 @@ export class MenuComponent implements OnInit {
 sair(){
   this.router.navigate(['/entrar'])
 
+  environment.usuario = ''
+  environment.tipo = ''
   environment.token = ''
   environment.nome = ''
   environment.foto = ''
